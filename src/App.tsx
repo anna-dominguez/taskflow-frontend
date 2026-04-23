@@ -215,11 +215,11 @@ function App() {
 			</div>
 		</div>
 
-		<div className="fixed bottom-4 right-4 z-50">
+		<div className="fixed top-4 right-4 z-50">
 			<button
 				type="button"
 				className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
-				onClick={() => { throw new Error('Erreur de test Sentry (React)'); }}
+				onClick={() => Sentry.captureException(new Error('Erreur de test Sentry (React)'))}
 			>
 				Test Sentry
 			</button>
