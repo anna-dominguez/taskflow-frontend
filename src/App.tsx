@@ -215,7 +215,7 @@ function App() {
 			</div>
 		</div>
 
-		<div className="fixed bottom-4 right-4">
+		<div className="fixed bottom-4 right-4 z-50">
 			<button
 				type="button"
 				className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
