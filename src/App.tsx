@@ -61,6 +61,13 @@ function App() {
 							TaskFlow
 						</h1>
 					</div>
+					<button
+						type="button"
+						className="mt-2 bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
+						onClick={() => Sentry.captureException(new Error('Erreur de test Sentry (React)'))}
+					>
+						Test Sentry
+					</button>
 					{totalTasks > 0 && (
 						<div className="mt-6 flex items-center justify-center gap-8 text-base">
 							<div className="flex items-center gap-3">
@@ -215,15 +222,6 @@ function App() {
 			</div>
 		</div>
 
-		<div className="fixed top-4 right-4 z-50">
-			<button
-				type="button"
-				className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
-				onClick={() => Sentry.captureException(new Error('Erreur de test Sentry (React)'))}
-			>
-				Test Sentry
-			</button>
-		</div>
 		</>
 	);
 }
