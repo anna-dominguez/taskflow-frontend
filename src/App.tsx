@@ -215,17 +215,15 @@ function App() {
 			</div>
 		</div>
 
-		{import.meta.env.DEV && (
-			<div className="fixed bottom-4 right-4">
-				<button
-					type="button"
-					className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
-					onClick={() => { throw new Error('Erreur de test Sentry (React)'); }}
-				>
-					Test Sentry
-				</button>
-			</div>
-		)}
+		<div className="fixed bottom-4 right-4">
+			<button
+				type="button"
+				className="bg-red-600 text-white px-4 py-2 rounded-lg text-sm font-mono shadow-lg"
+				onClick={() => { throw new Error('Erreur de test Sentry (React)'); }}
+			>
+				Test Sentry
+			</button>
+		</div>
 		</>
 	);
 }
