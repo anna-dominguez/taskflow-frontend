@@ -50,6 +50,7 @@ function App() {
 	const totalTasks = tasks.length;
 
 	return (
+		<>
 		<div className="min-h-screen p-8 lg:p-12">
 			{/* Header moderne avec glassmorphism */}
 			<header className="text-center text-white mb-16 animate-fade-in">
@@ -225,6 +226,7 @@ function App() {
 				</button>
 			</div>
 		)}
+		</>
 	);
 }
 
